@@ -17,7 +17,9 @@
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Nome</th>
+                        <th>CEP</th>
                         <th>Cidade</th>
                         <th>Estado</th>
                         <th>Telefone</th>
@@ -26,7 +28,9 @@
                 <tbody>
                     <% clientes.forEach(cliente => { %>
                         <tr>
+                            <td><%= cliente.id %></td>
                             <td><%= cliente.nome %></td>
+                            <td><%= cliente.cep %></td>
                             <td><%= cliente.cidade %></td>
                             <td><%= cliente.estado %></td>
                             <td><%= cliente.telefone %></td>
