@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+        <% if (typeof error !== 'undefined' && error) { %>
+            <div class="alert error">
+                <%= error %>
+            </div>
+        <% } %>
+
+        <h2>Clientes Cadastrados</h2>
+        
+        <% if (clientes && clientes.length > 0) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% clientes.forEach(cliente => { %>
+                        <tr>
+                            <td><%= cliente.nome %></td>
+                            <td><%= cliente.cidade %></td>
+                            <td><%= cliente.estado %></td>
+                            <td><%= cliente.telefone %></td>
+                            <td class="actions">
+                                <a href="/editar/<%= cliente.id %>" class="btn edit">Editar</a>
+                                <a href="/excluir/<%= cliente.id %>" class="btn delete" onclick="return confirm('Tem certeza?')">Excluir</a>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p>Nenhum cliente cadastrado ainda.</p>
+        <% } %>
+<%- include('partials/footer') %>
