@@ -34,7 +34,7 @@ Um sistema completo para gerenciamento de clientes desenvolvido com Node.js, Exp
    ```
 
 3. **Configuração**:
-   - Crie um arquivo `.env` baseado no `.env.example`
+   - Crie um arquivo `.env` (Opcional) 
    - Configure as credenciais do seu banco MySQL
 
 4. **Execução**:
