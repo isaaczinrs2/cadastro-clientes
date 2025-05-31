@@ -30,10 +30,11 @@ Um sistema completo para gerenciamento de clientes desenvolvido com Node.js, Exp
    git clone https://github.com/seu-usuario/cadastro-clientes.git
    cd cadastro-clientes
    npm install
+   npm install dotenv
    ```
 
 3. **Configuração**:
-   - Crie um arquivo `.env` baseado no `.env.example`
+   - Crie um arquivo `.env` (Opcional) 
    - Configure as credenciais do seu banco MySQL
 
 4. **Execução**:
