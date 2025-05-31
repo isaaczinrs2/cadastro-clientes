@@ -1,10 +1,10 @@
-const { Sequelize } = require('sequelize');
-const Cliente = require('../models/cliente');
+  const { Sequelize } = require('sequelize');
+  const Cliente = require('../models/cliente');
 
 exports.index = async (req, res) => {
   try {
     const clientes = await Cliente.findAll({
-      order: [['dataCadastro', 'DESC']]
+        order: [['dataCadastro', 'DESC']]
     });
     res.render('index', { clientes, error: null });
   } catch (err) {
