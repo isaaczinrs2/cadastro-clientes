@@ -27,7 +27,7 @@ Um sistema completo para gerenciamento de clientes desenvolvido com Node.js, Exp
 
 2. **Instalação**:
    ```bash
-   git clone https://github.com/seu-usuario/cadastro-clientes.git
+   git clone https://github.com/isaaczinrs2/cadastro-clientes.git
    cd cadastro-clientes
    npm install
    npm install dotenv
